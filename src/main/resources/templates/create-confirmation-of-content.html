@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Confirmation of Content</title>
+</head>
+<body>
+<h2>Create Confirmation of Content</h2>
+
+<form action="#" th:action="@{/confirmation-of-content/form}" th:object="${confirmationOfContent}" method="post">
+    <p>Producer ID: <input type="text" th:field="*{productId}" /></p>
+    <p>Description: <input type="text" th:field="*{componentId}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>

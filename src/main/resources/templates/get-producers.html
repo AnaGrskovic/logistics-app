@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Producers</title>
+</head>
+<body>
+<h2>All Producers</h2>
+
+<table>
+    <tr>
+        <th>Producer ID</th>
+        <th>Address</th>
+    </tr>
+    <tr th:each="producer : ${producers}">
+        <td th:text="${producer.producerId}"></td>
+        <td th:text="${producer.address}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
